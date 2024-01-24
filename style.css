@@ -1,0 +1,296 @@
+/* CSS Reset*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    /* height: 100%; */
+    /* width: 100%; */
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+
+}
+
+/* CSS Variables*/
+
+:root{
+    --navbar-height :59px;
+}
+
+/* Navigatioin Bar*/
+
+#navbar{
+        display:flex ;
+        align-items: center;
+        top:0px ;
+        position:sticky;
+}
+
+
+#navbar::before{
+    content: " " ;
+    background-color: rgb(199, 41, 41);
+    position:absolute ;
+    top:0px ;
+    left: 0px;
+    height: 100%;
+    width:100% ;
+    z-index: -1 ;
+    opacity:.7;
+    
+}
+/* Navigatioin Bar : Logo  & Images */
+
+#logo{
+    margin: 10px 34px;
+    border-radius: 20px;
+}
+#logo img{
+    margin: 3px 6px;
+    border-radius: 45px 50px 45px 50px;
+    height:59px ;
+}
+/* Navigatioin Bar : List Styling*/
+
+#navbar ul{
+     display: flex;
+     font-family: 'Baloo Bhai', cursive;                 
+}
+#navbar ul li{
+       list-style: none;
+       font-size: 1.3rem;
+}
+#navbar ul li a{
+    
+  color:yellow ;
+  display:block ;
+  padding:7px 30px ;
+  border-radius:20px ;
+  text-decoration:none ;
+}
+#navbar ul li a:hover{
+    color: orangered ;
+    background-color:white ;
+    }
+
+/* Home Section */
+
+#home{
+   display: flex;
+   flex-direction:column;
+   align-items: center;
+   padding:3px 200px ;
+   height:550px;
+   justify-content: center;
+
+}
+
+/* #home::before{ */
+    /* content: ""; */
+    /* background-color:url('../bg1.jpg') no-repeat center center/cover; */
+    /* position: absolute; */
+    /* top:0px; */
+    /* left:0px; */
+    /* height: 650px; */
+    /* width:100%; */
+    /* z-index: -1; */
+    /* opacity: 0.89; */
+/*  */
+/* } */
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home h1{
+    font-family: 'Bree Serif' serif;
+    text-align: center;
+    color: white;
+}
+
+#home p{
+    font-family: 'Bree Serif' serif;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Service Section */
+
+#service{
+display: inline-flexbox;
+margin: 34px;
+}
+
+#services .box{
+    border:2px solid brown;
+    padding:30px;
+    margin: 10px 25px;
+    margin-bottom:20px;
+    border-radius:28px;
+    background: white;
+}
+
+
+
+
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: flex;
+}
+
+#services .box p{
+    font-family: 'Bree serif' serif;
+}
+
+/* Client Section */
+
+#client-section{
+    position: relative;
+}
+#client-section::before{
+
+    content: "";
+    background-color:url('../bg.jpg');
+    position: absolute;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#client{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+   
+.client-item{
+        padding:34px;
+}
+
+#client img{
+    height: 124px;
+}
+/* Contact us Section */
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    background: url('../contact.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#contact-box{
+display:flex;
+align-items:center ;
+justify-content: center;
+padding-bottom:34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: .5rem;
+    border-radius:9px ;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree serif' serif;
+}
+footer{
+  background: black;
+  padding:9px 20px;
+  height: 100px;
+  color:white;
+}
+/* Utility Classes */
+
+.h-primary{
+font-size:3.8rem ;
+font-family: 'Bree Serif', serif;
+padding:12px ;
+}
+
+.h-secondry{
+    font-size:'Bree Serif', serif;
+    font-family: 2.3rem;
+    padding:12px ;
+}
+
+.btn{
+font-size:1.5rem ;
+padding:6px 20px ;
+cursor: pointer;
+border:2px solid white ;
+background-color:red ;
+border-radius:10px ;
+margin:17px ;
+}
+.center{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
